@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Demo: Apple shop navigation recreated using Greensock</title>
+        <meta name="description" content="Learn how to recreate Apple shop navigation using Greensock. Tutorial for passionate front-end web developers. www.ihatetomatoes.net | @ihatetomatoes">
+        
+        <!--iOS -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <style type="text/css">
+			.back-link a {
+				color: #4ca340;
+				text-decoration: none; 
+				border-bottom: 1px #4ca340 solid;
+			}
+			.back-link a:hover,
+			.back-link a:focus {
+				color: #408536; 
+				text-decoration: none;
+				border-bottom: 1px #408536 solid;
+			}
+			h1 {
+				height: 100%;
+				/* The html and body elements cannot have any padding or margin. */
+				margin: 0;
+				font-size: 14px;
+				font-family: 'Open Sans', sans-serif;
+				color: #1c1d1e;
+				font-size: 32px;
+				margin-bottom: 3px;
+			}
+			.entry-header {
+				text-align: left;
+				margin: 0 auto 50px auto;
+				width: 978px;
+			}
+			#demo-content {
+				padding-top: 100px;
+			}
+		</style>
+    </head>
+    <body class="demo">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+		<!-- Demo content -->			
+		<div id="demo-content">
+        
+	        <header class="entry-header">
+				<nav class="back-link">
+					<span class="nav-previous"><a href="http://ihatetomatoes.net/tutorial-apple-navigation-using-greensock/ ‎" rel="prev"><span class="meta-nav">&larr;</span> Back to tutorial</a></span>
+				</nav><!-- .nav-single -->
+		
+				<h1 class="entry-title">Demo: Create Apple navigation using Greensock</h1>
+			</header>
+	        
+	        <div id="wrapper">
+	        	<div class="navbar">
+			        <div class="panel-body">
+					<ul role="navigation" aria-label="Shop Mac" class="clearfix tiles-11">
+						
+						<li class="tile-1 leftProducts current">
+							<a class="block tile-link" href="#">
+								<div class="image">
+									<img class="ir" src="img/macbook-pro.png" alt="" width="137" height="56">
+								</div>
+							
+								<div class="tile-body">
+									MacBook Air
+								</div> 
+							</a>
+						</li>
+					
+						<li class="tile-2 leftProducts">
+							<a class="block tile-link" href="#">
+								<div class="image">
+									<img class="ir" src="img/macbook-pro.png" alt="" width="137" height="56">
+								</div>
+								<div class="tile-body">
+									MacBook Pro
+								</div> 
+							</a>
+						</li>
+					
+						<li class="tile-3 leftProducts">
+							<a class="block tile-link" href="#">
+								<div class="image">
+									<img class="ir" src="img/macbook-pro.png" alt="" width="137" height="56">
+								</div>
+								<div class="tile-body">
+									Mac mini
+								</div> 
+							</a>
+						</li>
+					
+						<li class="tile-4 leftProducts">
+							<a class="block tile-link" href="#">
+								<div class="image">
+									<img class="ir" src="img/macbook-pro.png" alt="" width="137" height="56">
+								</div>
+								<div class="tile-body">
+									iMac
+								</div> 
+							</a>
+						</li>
+					
+						<li class="tile-5 leftProducts">
+							<a class="block tile-link" href="#">
+								<div class="image">
+									<img class="ir" src="img/macbook-pro.png" alt="" width="137" height="56">
+								</div>
+								<div class="tile-body">
+									Mac Pro
+								</div> 
+							</a>
+						</li>
+					
+						<li class="tile-6 leftProducts">
+							<a class="block tile-link" href="#">
+								<div class="image">
+									<img class="ir" src="img/macbook-pro.png" alt="" width="137" height="56">
+								</div>
+								<div class="tile-body">
+									Mac Accessories
+								</div> 
+							</a>
+						</li>
+					
+						<li class="tile-7 leftProducts">
+							<a class="block tile-link" href="#">
+								<div class="image">
+									<img class="ir" src="img/macbook-pro.png" alt="" width="137" height="56">
+								</div>
+								<div class="tile-body">
+									Compare Models
+								</div> 
+							</a>
+						</li>
+					
+						<li class="tile-8 rightProducts">
+							<a class="block tile-link" href="#">
+								<div class="image">
+									<img class="ir" src="img/macbook-pro.png" alt="" width="137" height="56">
+								</div>
+								<div class="tile-body">
+									Community Q&amp;A
+								</div>
+							</a>
+						</li>
+					
+						<li class="tile-9 rightProducts">
+							<a class="block tile-link" href="#">
+								<div class="image">
+									<img class="ir" src="img/macbook-pro.png" alt="" width="137" height="56">
+								</div>
+								<div class="tile-body">
+									Certified Refurbished
+								</div> 
+							</a>
+						</li>
+					
+						<li class="tile-10 rightProducts">
+							<a class="block tile-link" href="#">
+								<div class="image">
+									<img class="ir" src="img/macbook-pro.png" alt="" width="137" height="56">
+								</div>
+								<div class="tile-body">
+									Mac for Education
+								</div> 
+							</a>
+						</li>
+					
+						<li class="tile-11 rightProducts">
+							<a class="block tile-link" href="#">
+								<div class="image">
+									<img class="ir" src="img/macbook-pro.png" alt="" width="137" height="56">
+								</div>
+								<div class="tile-body">
+									Mac for Business
+								</div>
+							</a>
+						</li>
+					</ul>
+					<a class="navbar-arrow left"></a>
+					<a class="navbar-arrow right in"></a>
+			        </div>
+				</div>
+			
+	        </div>
+
+		</div>
+		<!-- /Demo content -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/vendor/greensock/TweenMax.min.js"></script>
+        <script src="js/vendor/greensock/easing/EasePack.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount',''],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
